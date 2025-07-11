@@ -36,4 +36,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: saimanideep2906/efsprac/:latest
+        tags: saimanideep2906/efsprac:latest
