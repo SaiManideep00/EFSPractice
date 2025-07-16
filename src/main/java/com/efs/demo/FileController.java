@@ -30,7 +30,7 @@ public class FileController {
 //                .map(path -> path.getFileName().toString())
 //                .collect(Collectors.toList());
 //    }
-    @GetMapping("getSecrets")
+    @GetMapping("/getSecrets")
     public Map<String, String> getEnvVariables() {
         Map<String, String> env = new HashMap<>();
         env.put("DB Username", System.getenv("DB_USERNAME"));
