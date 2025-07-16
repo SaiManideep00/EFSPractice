@@ -32,10 +32,11 @@ public class FileController {
 //    }
     @GetMapping("/getSecrets")
     public Map<String, String> getEnvVariables() {
-        Map<String, String> env = new HashMap<>();
-        env.put("DB Username", System.getenv("DB_USERNAME"));
-        env.put("DB password", System.getenv("DB_PASSWORD"));
-
-        return env;
+//        Map<String, String> env = new HashMap<>();
+//        env.put("DB Username", System.getenv("JAVA_HOMEa"));
+//        env.put("DB password", System.getenv("DB_PASSWORD"));
+//
+//        return env;
+        return Map.of("username","admin");
     }
 }
